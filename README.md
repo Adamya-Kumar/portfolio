@@ -173,6 +173,23 @@ Note: The configuration uses the newer Vercel syntax where `rewrites` and `heade
    npm run vercel-deploy
    ```
 
+## 🛠 Troubleshooting
+
+### Common Deployment Issues
+
+1. **Case Sensitivity Errors**
+   - **Problem**: `Could not resolve "../components/ParallaxBackground" from "src/sections/Hero.jsx"`
+   - **Solution**: Ensure file names match exactly, including case. The file is named `parallaxBackground.jsx` (lowercase 'p'), not `ParallaxBackground.jsx`.
+   - **Why**: Linux file systems (used by Vercel) are case-sensitive, while Windows is not.
+
+2. **Routing Issues**
+   - **Problem**: 404 errors when navigating to pages directly
+   - **Solution**: The `vercel.json` includes rewrite rules to serve `index.html` for all routes, enabling client-side routing.
+
+3. **Asset Loading Issues**
+   - **Problem**: Images or other assets not loading
+   - **Solution**: Ensure all assets are in the `public` directory and referenced with correct paths starting with `/`
+
 ## 📁 Project Structure
 
 ```
