@@ -1,13 +1,30 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Personal portfolio website built with React, Vite, and Tailwind CSS",
+  "author": "Adamya Kumar",
+  "license": "MIT",
+  "homepage": "https://your-username.vercel.app",
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite",
+    "tailwindcss",
+    "threejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adamya-Kumar/Portfolio.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist",
+    "vercel-deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

@@ -1,116 +1,210 @@
-# 🚀 3D Developer Portfolio
+# Personal Portfolio Website
 
-A modern, animated 3D developer portfolio built with React, Three.js, TailwindCSS, and motion effects — designed to help you stand out and showcase your skills creatively.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences as a full-stack developer.
 
-![3d Portfolio Screenshot GitHub](https://github.com/user-attachments/assets/9b0ed20e-074e-4f2a-81d8-20c9da751e9e)
+## 🌐 Live Demo
 
----
+[View Live Demo](https://adamya-kumar.github.io/)
 
-## 📚 Table of Contents
+## 📋 Table of Contents
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Assets](#-assets)
-- [Contact Me](#-contact-me)
-- [Suggestions or Feedback](#-suggestions-or-feedback)
-- [Like This Project?](#-like-this-project)
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
----
+## 📖 About
+
+This portfolio website is designed to showcase my work, skills, and experiences as a full-stack developer. It features interactive 3D elements, responsive design, and smooth animations to create an engaging user experience.
 
 ## ✨ Features
 
-- 🔥 3D visuals powered by **React Three Fiber** and **Drei**
-- ⚡ Smooth transitions and scroll-based animations using **Framer Motion**
-- 🎨 Clean, responsive UI with **TailwindCSS**
-- 💌 Working contact form using **EmailJS**
-- 🧱 Beautiful UI enhancements with **Aceternity UI** and **Magic UI**
-- 🚀 Lightning-fast development with **Vite**
+- **Responsive Design**: Works on all device sizes
+- **Interactive 3D Elements**: Built with Three.js and React Three Fiber
+- **Smooth Animations**: Using Framer Motion and GSAP
+- **Modern UI**: Styled with Tailwind CSS
+- **Project Showcase**: Detailed project descriptions with live demos
+- **Experience Timeline**: Interactive timeline of my professional journey
+- **Contact Form**: Email integration with EmailJS
+- **Performance Optimized**: Lazy loading and code splitting
 
----
+## 🛠 Technologies Used
 
-## 🛠 Tech Stack
+- **Frontend**: React, Vite, Tailwind CSS
+- **3D Graphics**: Three.js, React Three Fiber, Drei
+- **Animations**: Framer Motion, GSAP
+- **UI Components**: React Icons
+- **Deployment**: GitHub Pages, Vercel (optional)
+- **Utilities**: EmailJS (for contact form)
 
-| Tech              | Description                           |
-|-------------------|---------------------------------------|
-| React             | Front-end JavaScript library          |
-| Vite              | Fast bundler and dev environment      |
-| TailwindCSS       | Utility-first CSS framework           |
-| React Three Fiber | 3D rendering with Three.js in React   |
-| Drei              | Helpers and abstractions for R3F      |
-| Framer Motion     | Animation library for React           |
-| EmailJS           | Form handling and email integration   |
-| Aceternity UI     | Custom UI components                  |
-| Magic UI          | Prebuilt UI elements and design extras|
+## 🚀 Getting Started
 
----
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Adamya-Kumar/Portfolio.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Portfolio
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+## 👨‍💻 Development
+
+To start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## 📦 Deployment
+
+### GitHub Pages
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+
+### Vercel Deployment
+
+#### Step-by-Step Vercel UI Deployment Guide
+
+1. **Prepare Your Repository**
+   - Ensure your code is pushed to a GitHub repository
+   - Your repository should contain all the files from this project
+
+2. **Sign Up/Log In to Vercel**
+   - Visit [Vercel](https://vercel.com/)
+   - Click "Sign Up" or "Log In" in the top right corner
+   - You can sign up with GitHub, GitLab, or Bitbucket for easier integration
+
+3. **Create a New Project**
+   - After logging in, click the "New Project" button
+   - If this is your first time, you'll see a "Create a New Project" option
+
+4. **Import Your Git Repository**
+   - Under "Import Git Repository", you'll see your GitHub repositories
+   - Find and select your portfolio repository
+   - Click "Import"
+
+5. **Configure Project Settings**
+   - Vercel will automatically detect this is a Vite project
+   - Verify the following settings:
+     - **Build Command**: `npm run build`
+     - **Output Directory**: `dist`
+     - **Install Command**: `npm install`
+   - These should be automatically filled in, but verify they match
+
+6. **Deploy Your Project**
+   - Click the "Deploy" button
+   - Vercel will now:
+     - Clone your repository
+     - Install dependencies
+     - Run the build command
+     - Deploy your site
+
+7. **View Your Deployment**
+   - The deployment process will take 1-3 minutes
+   - You'll see a live URL (e.g., `your-project-name.vercel.app`)
+   - Click "Go to Dashboard" to view deployment details
+
+8. **Configure Custom Domain (Optional)**
+   - In your project dashboard, go to "Settings" → "Domains"
+   - Add your custom domain
+   - Follow the DNS configuration instructions
+
+#### Vercel Configuration
+
+This project includes a `vercel.json` file that configures:
+- Route rewrites for client-side routing
+- Build settings for the static site generator
+
+### Alternative Vercel CLI Deployment
+
+1. Install Vercel CLI globally:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Deploy using the CLI:
+   ```bash
+   vercel --prod
+   ```
+   
+   Or use the project script:
+   ```bash
+   npm run vercel-deploy
+   ```
 
 ## 📁 Project Structure
 
-```bash
-├── public/
-│   ├── assets/             # Images, textures, models
-│   ├── models/             # 3D Astronaut model
-│   └── vite.svg
-├── src/
-│   ├── components/         # Reusable components
-│   ├── constants/          # Reusable datas
-│   ├── sections/           # Portfolio sections (Hero, About, etc.)
-│   ├── App.jsx             # Main app file
-│   ├── index.css           # Tailwind css
-│   └── main.jsx            # Entry point
-├── tailwind.config.js
-└── vite.config.js
+```
+src/
+├── components/        # Reusable components
+├── constants/         # Application constants and data
+├── sections/          # Main page sections
+├── App.jsx           # Main application component
+├── main.jsx          # Entry point
+└── index.css         # Global styles
 ```
 
----
+## 📜 Available Scripts
 
-## 🚀 Getting Started
-1. Clone the Repository
-```bash
-git clone https://github.com/Ali-Sanati/Portfolio.git
-cd Portfolio
-```
-2. Install Dependencies
-```bash
-npm install
-```
-3. Run the Development Server
-```bash
-npm run dev
-```
-The app will be available at http://localhost:5173.
+- `npm run dev` - Starts the development server
+- `npm run build` - Builds the project for production
+- `npm run preview` - Previews the production build locally
+- `npm run deploy` - Deploys to GitHub Pages
+- `npm run lint` - Runs ESLint
 
----
+## 🤝 Contributing
 
-## 🔗 Assets
-Assets used in the project can be found [here](https://github.com/user-attachments/files/19820923/public.zip)
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
----
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📬 Contact Me
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/ali.sanatidev/reels/) 
-[![Static Badge](https://img.shields.io/badge/Youtube-%23FF0033?style=flat&logo=youtube)](https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-sanati/) 
+## 📄 License
 
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 💡 Suggestions or Feedback?
-Leave a comment on the [YouTube video](https://youtu.be/S9UQItTpwUQ) or open an issue here on GitHub.<br/>
-👉 What should I build next?
+## 📞 Contact
 
-- A beautiful Landing Page
+Adamya Kumar - [@LinkedIn](https://www.linkedin.com/in/adamya-kumar) - [@GitHub](https://github.com/Adamya-Kumar)
 
-- A complete E-commerce site
-
-- A fun App Clone (YouTube, Netflix, etc.)
-
-Or another interactive Portfolio
-
-Let me know!
-
----
-
-## ⭐ Like This Project?
-Star the repo and [subscribe](https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA??sub_confirmation=1) to the YouTube channel for more dev content!
+Project Link: [https://github.com/Adamya-Kumar/Portfolio](https://github.com/Adamya-Kumar/Portfolio)
