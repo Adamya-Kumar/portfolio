@@ -149,8 +149,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 #### Vercel Configuration
 
 This project includes a `vercel.json` file that configures:
-- Route rewrites for client-side routing
+- Route rewrites for client-side routing (essential for React Router)
+- Cache headers for static assets
+- Security headers for enhanced protection
 - Build settings for the static site generator
+
+Note: The configuration uses the newer Vercel syntax where `rewrites` and `headers` are used instead of the legacy `routes` property to avoid conflicts.
 
 ### Alternative Vercel CLI Deployment
 
